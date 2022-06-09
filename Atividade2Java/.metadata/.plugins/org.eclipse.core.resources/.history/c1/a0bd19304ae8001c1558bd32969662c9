@@ -1,0 +1,39 @@
+package Atividade2;
+
+import javax.swing.JOptionPane;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int dia=0, mes=30, ano=365, rm=0, ra=0, n=0, m=0;
+		
+		
+		JOptionPane.showMessageDialog(null, "Insire sua idade, mês atual e dia");
+		m = Integer.parseInt(JOptionPane.showInputDialog("Informe uma quantidade de mês"));
+		n = Integer.parseInt(JOptionPane.showInputDialog("Informe uma quantidade de ano"));
+		
+		if (m >= 1 && m <= 12) {
+			
+			rm = (mes * m);
+			
+		}else {
+			
+			JOptionPane.showMessageDialog(null, "Você só pode inserir o mês de 1 até 12");
+				
+		}
+		
+		if (n >= 1) {
+			
+			ra = (ano * n);
+			
+		}		
+		
+		dia = ra + rm;
+		
+		JOptionPane.showMessageDialog(null, "Quantidade de dias: "+ dia);
+		
+	}
+	
+}
