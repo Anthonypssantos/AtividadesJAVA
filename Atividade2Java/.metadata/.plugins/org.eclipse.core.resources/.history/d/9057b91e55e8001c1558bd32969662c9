@@ -1,0 +1,22 @@
+package Atividade2;
+
+import javax.swing.JOptionPane;
+
+public class Main5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double smo=1.200, r, p;
+		
+		r = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira seu salario\n"));
+		
+		if (r >= 1.200) {
+			
+			p = (r / smo);
+			
+			JOptionPane.showMessageDialog(null, "Faltam: "+ p);
+		
+		}
+	}
+}
