@@ -2,20 +2,21 @@ package Atividade2;
 
 import javax.swing.JOptionPane;
 
-public class Main2 {
+public class Main4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		int n=0, r=0;
 		
-		JOptionPane.showMessageDialog(null, "Insira um numero entre 8, 9, 7, 4, 5 e 6");
+		float s=0, r=0;
 		
-		n = Integer.parseInt(JOptionPane.showInputDialog("informe um numero entre 8, 9, 7, 4, 5 e 6\n"));
+		JOptionPane.showMessageDialog(null, "Insira um saldo aleatorio\n");
 		
-		r = (n / 2);
-	
-		JOptionPane.showMessageDialog(null, "Numero inserido anteriormente é: "+ r);
+		s = Float.parseFloat(JOptionPane.showInputDialog("Insire seu saldo com ."));
+		
+		r = s - 1;
+		
+		JOptionPane.showMessageDialog(null, "Teste: "+ r);
+		
 	}
 
 }

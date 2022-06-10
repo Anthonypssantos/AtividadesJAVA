@@ -1,21 +1,27 @@
-package Atividade2;
+package Atividades;
 
 import javax.swing.JOptionPane;
 
-public class Main4 {
+public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		float s=0, r=0;
+		int p=0, valor1=0,valor2=0, ipi=0, quant1=0, quant2=0;
 		
-		JOptionPane.showMessageDialog(null, "Insira um saldo aleatorio\n");
+		JOptionPane.showMessageDialog(null, "Insire os dados");
 		
-		s = Float.parseFloat(JOptionPane.showInputDialog("Insire seu saldo com ."));
+		valor1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Peça 1\n"));
+		valor2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Peça 2\n"));
+		valor1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Peça 2\n"));
+		quant1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantidade 1\n"));
+		quant2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantidade 2\n"));
+		ipi = Integer.parseInt(JOptionPane.showInputDialog(null, "Insire o IPI\n"));
 		
-		r = s - 1;
+		p = (valor1*quant1*valor2*quant2)*(ipi/100 + 1);
 		
-		JOptionPane.showMessageDialog(null, "Teste: "+ r);
+		
+		JOptionPane.showMessageDialog(null, "Formula: "+ p);
 		
 	}
 
